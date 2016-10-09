@@ -1,0 +1,22 @@
+.carousel{
+    position: fixed;
+    top: 45%;
+    // bottom: 0;
+    right: 30px;
+    margin: auto;
+    z-index: 2;
+    .item{
+        cursor: pointer;
+        margin-bottom: 10px;
+        >img{
+            width: 5px;
+            height: 5px;
+        }
+        &.active{
+            width: 8px;
+            height: 8px;
+            border: 2px solid $orange;
+            border-radius: 10px;    
+        }
+    }
+}

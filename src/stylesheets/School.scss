@@ -1,0 +1,174 @@
+main.school {
+    .screen-1{
+        text-align: center;
+        .title-1{
+            margin-top: 78px;
+            font-size: 28px;
+            color: $orange;
+        }
+        .title-2{
+            margin-top: 17px;
+            font-size: 12px;
+            color: #333333;
+
+        }
+        .title-3{
+            margin-top: 21px;
+            font-size: 12px;
+            color: $orange;
+        }
+        .title-4{
+            margin: 0 auto;
+            width: 10px;
+            transform: rotateZ(90deg);
+            color: $orange;
+        }
+        .features{
+            margin-top: 53px;
+            text-align: center;
+            .feature-item {
+                display: inline-block;
+                margin: 0 4%;
+                >img{
+                    width: 130px;
+                    height: 128px;
+                    margin-bottom: 36px;
+                }
+                .name{
+                    font-size: 16px;
+                    color: #333333;
+                    position: relative;
+                    width: 150px;
+                    >img{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 15px;
+                        margin: auto;
+                        width: 6px;
+                        height: 6px;
+                    }
+                }
+                .des{
+                    margin: 9px auto;
+                    // text-align: left;
+                    // width: 155px;
+                    font-size: 12px;
+                    color: #a2a2a2;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .screen-2{
+        img.background{
+            width: 100%;
+            height: auto;
+        }
+        .title-1{
+            width: 130px;
+            height: 67px;
+            position: absolute;
+            left: 61px;
+            bottom: 71px;
+            background: $orange;
+            color: white;
+            font-size: 28px;
+            text-align: center;
+            .en{
+                font-size: 12px;
+                color: white;
+            }
+        }
+        .title-2{
+            width: 243px;
+            height: 38px;
+            line-height: 38px;
+            position: absolute;
+            left: 61px;
+            bottom: 23px;
+            background: rgba(51,51,51,0.42);
+            padding-left: 10px;
+            color: white;
+            font-size: 12px;
+        }
+    }
+    .screen-3{
+        .pm{
+            width: px2percent(596);
+            height: px2percent(209);
+            margin: px2percent(40) px2percent(21) px2percent(24) px2percent(61);
+        }
+        .nm{
+            width: px2percent(285);
+            height: px2percent(208);
+            vertical-align: top;
+            margin-top: px2percent(40);
+        }
+        .title-1{
+            margin-left: px2percent(61);
+            font-size: 20px;
+            color: $orange;
+            margin-bottom: 8px;
+        }
+        .remarks{
+            margin:0 px2percent(61);
+            .remark-item{
+                position: relative;
+                line-height: 20px;
+                padding-left: 15px;
+                margin-bottom: 30px;
+                >img{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    width: 6px;
+                    height: 6px;
+                }
+                .des{
+                    color: #333333;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .screen-4{
+        background-color: white;
+        img.background{
+            position: absolute;
+            right: 0;
+            width: 69%;
+            height: auto;
+        }
+        .text{
+            position: absolute;
+            left: px2percent(97);
+            top: 152px;
+            text-align: center;
+            .title{
+                font-size: 20px;
+                color: #333333;
+                margin-bottom: 12px;
+            }
+            .title-1{
+                opacity: 0.39;
+            }
+            .title-2{
+                opacity: 0.64;
+            }
+            .button{
+                width: 105px;
+                height: 37px;
+                line-height: 37px;
+                background-color: $orange;
+                border-radius: 30px;
+                color: white;
+                font-size: 16px;
+                margin: 0 auto;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,79 @@
+main.about{
+    .screen-1{
+        min-height: 338px;
+        img.background{
+            width: 100%;
+            height: auto;
+        }
+        .title-1{
+            position: absolute;
+            left: px2percent(67);
+            bottom: 25px;
+            width: 200px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 18px;
+            color: white;
+            padding-left: 10px;
+            background-color: $orange;
+        }
+    }
+    .screen-info{
+        padding-top: 40px;
+        min-height: 0;
+        .title{
+            width: px2percent(200);
+            padding-left: px2percent(56);
+            // text-align: center;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 28px;
+            color: $orange;
+        }
+        .text{
+            display: inline-block;
+            width: px2percent(820);
+            padding: 0 px2percent(50) 41px;
+            .text-1{
+                line-height: 25px;
+                font-size: 16px;
+                color: #333333;
+                &.center{
+                    color: #a2a2a2;
+                    text-align: center;
+                }
+            }
+            .text-2{
+                line-height: 25px;
+                font-size: 16px;
+                color: #333333;
+                &.center{
+                    color: #a2a2a2;
+                    text-align: center;
+                }
+            }
+            .text-3{
+                line-height: 25px;
+                font-size: 16px;
+                color: #333333;
+                padding-top: 26px;
+            }
+            .title-1{
+                position: relative;
+                font-size: 20px;
+                color: #333333;
+                padding: 10px 0;
+                >img{
+                    position: absolute;
+                    left: -15px;
+                    width: 8px;
+                    height: 8px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+            border-bottom: 1px solid #a2a2a2;
+        }
+    }
+}
