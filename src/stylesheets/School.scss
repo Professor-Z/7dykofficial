@@ -164,8 +164,10 @@ main.school {
                 line-height: 37px;
                 background-color: $orange;
                 border-radius: 30px;
-                color: white;
-                font-size: 16px;
+                a{
+                    color: white;
+                    font-size: 16px;
+                }
                 margin: 0 auto;
             }
         }

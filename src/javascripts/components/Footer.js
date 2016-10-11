@@ -5,7 +5,15 @@ const Footer = () =>{
     return (
         <footer>
             <div className="links">
-                <div className="link">7点社群｜7点问答｜7点学院｜关于我们</div>
+                <div className="link">
+                <Link to="/group">7点社群</Link>
+                ｜
+                <Link to="/wenda">7点问答</Link>
+                ｜
+                <Link to="/school">7点学院</Link>
+                ｜
+                <Link to="/about">关于我们</Link>
+                </div>
                 <div className="link gray">早一刻  看看象牙塔外面的世界 </div>
                 <div className="link gray">7点一刻由北京君宏科技有限公司开放许可｜京ICP备15019226号－1 </div>
             </div>

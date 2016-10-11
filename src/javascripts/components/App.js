@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, IndexLink } from 'react-router'
+import Footer from "./Footer"
 
 const App = ({children}) =>{
     return (
@@ -19,6 +20,7 @@ const App = ({children}) =>{
             </ul>
         </header>
         {children}
+        <Footer />
       </div>
     )
 }

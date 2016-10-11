@@ -21,22 +21,22 @@ const Wenda = () =>{
     ]
     const tutors = [
         {
-            url:"倪龙云.png",
+            url:"倪龙云.jpg",
             name:"倪龙云",
             intro:<div className="intro">10年互联网行业大咖<br />丹诚资本合伙人</div>
         },
         {
-            url:"韩东君.png",
+            url:"韩东君.jpg",
             name:"韩东君",
             intro:<div className="intro">前中国校园新媒体联盟执行主席<br />帝都学生圈、学生价等自媒体创始人</div>
         },
         {
-            url:"谷元庆.png",
+            url:"谷元庆.jpg",
             name:"谷元庆",
             intro:<div className="intro">腾讯公司产品经理曾在阿里、网易任职<br />著有《产品经理面试攻略》</div>
         },
         {
-            url:"徐鹏.png",
+            url:"徐鹏.jpg",
             name:"徐鹏",
             intro:<div className="intro">今日头条架构工程师<br />编著《Hadoop 2.X HDFS源码解析》</div>
         },
@@ -45,7 +45,7 @@ const Wenda = () =>{
         <main className="wenda">
             <Carousel>
             <section className="screen-1"  id="screen-1">
-                <img className="background" src={require("../../images/wenda/7点问答 首图.png")} alt="7点问答 首图.png"/>
+                <img className="background" src={require("../../images/wenda/7点问答 首图.jpg")} alt="7点问答 首图.jpg"/>
                 <div className="title-2">大学生的职场、找工作、找实习的问答平台</div>
                 <div className="title-1">大学生的问答平台—7点问答</div>
                 <img className="qr" src={require("../../images/wenda/7点问答 微信公众号.png")} alt="7点问答 微信公众号.png" />

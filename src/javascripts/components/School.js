@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router"
 import Carousel from "./Carousel"
 
 const School = () =>{
@@ -59,13 +60,13 @@ const School = () =>{
                 </div>
             </section>
             <section className="screen-2" id="screen-2">
-                <img className="background" src={require("../../images/school/Bitmap.png")} alt="Bitmap.png"/>
+                <img className="background" src={require("../../images/school/Bitmap.jpg")} alt="Bitmap.jpg"/>
                 <div className="title-1">PM学院<br /><span className="en">(Product Manager)</span></div>
                 <div className="title-2">集中培养期望入职名企产品经理职位的学生</div>
             </section>
             <section className="screen-3" id="screen-3">
-                <img className="pm" src={require("../../images/school/7点学院pm.png")} alt="7点学院pm.png"/>
-                <img className="nm" src={require("../../images/school/7点学院nm.png")} alt="7点学院nm.png"/>
+                <img className="pm" src={require("../../images/school/7点学院pm.jpg")} alt="7点学院pm.jpg"/>
+                <img className="nm" src={require("../../images/school/7点学院nm.jpg")} alt="7点学院nm.jpg"/>
                 <div className="title-1">学员评价</div>
                 <div className="remarks">
                 {
@@ -79,12 +80,14 @@ const School = () =>{
                 </div>
             </section>
             <section className="screen-4" id="screen-4">
-                <img className="background" src={require("../../images/school/职场.png")} alt="职场.png"/>
+                <img className="background" src={require("../../images/school/职场.jpg")} alt="职场.jpg"/>
                 <div className="text">
                     <div className="title-1 title">面试如何准备？</div>
                     <div className="title-2 title">产品经理需要掌握哪些技能？</div>
                     <div className="title-3 title">如何拿到互联网公司的offer？</div>
-                    <div className="button">立即报名</div>
+                    <div className="button">
+                        <Link to="/">立即报名</Link>
+                    </div>
                 </div>
             </section>
             </Carousel>

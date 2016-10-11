@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from "./Footer"
+
 const About = () =>{
     return (
         <main className="about">
@@ -37,7 +37,7 @@ const About = () =>{
                         2014年
                     </div>
                     <div className="text-1">
-                        学生价“学生圈新媒体矩阵中第一个平台”正式创立，创业之路由此启程
+                        学生价“学生圈新媒体矩阵”中第一个平台正式创立，创业之路由此启程
                     </div>
                     <div className="title-1">
                         <img src={require("../../images/about/Oval.png")} alt="·"/>
@@ -87,7 +87,6 @@ const About = () =>{
                     </div>
                 </div>
             </section>
-            <Footer />
         </main>
     )
 }

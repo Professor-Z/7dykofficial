@@ -57,8 +57,9 @@ module.exports = {
     },
     plugins: plugins,
     externals: {
-        // 'babel-polyfill': 'true',
-        // "sweetalert": "swal"
+        'babel-polyfill': 'true',
+        'react':'React',
+        'react-router':'ReactRouter'
     },
     devServer: {
         historyApiFallback: true,
