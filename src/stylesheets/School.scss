@@ -2,7 +2,7 @@ main.school {
     .screen-1{
         text-align: center;
         .title-1{
-            margin-top: 78px;
+            padding-top: 78px;
             font-size: 28px;
             color: $orange;
         }
@@ -73,8 +73,12 @@ main.school {
             bottom: 71px;
             background: $orange;
             color: white;
-            font-size: 28px;
             text-align: center;
+            .big{
+                padding: 5px 0;
+                font-size: 28px;
+                color: white;
+            }
             .en{
                 font-size: 12px;
                 color: white;
@@ -139,8 +143,8 @@ main.school {
         img.background{
             position: absolute;
             right: 0;
-            width: 69%;
-            height: auto;
+            width: auto;
+            height: 100%;
         }
         .text{
             position: absolute;

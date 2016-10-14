@@ -61,7 +61,10 @@ const School = () =>{
             </section>
             <section className="screen-2" id="screen-2">
                 <img className="background" src={require("../../images/school/Bitmap.jpg")} alt="Bitmap.jpg"/>
-                <div className="title-1">PM学院<br /><span className="en">(Product Manager)</span></div>
+                <div className="title-1">
+                    <div className="big">PM学院</div>
+                    <div className="en">(Product Manager)</div>
+                </div>
                 <div className="title-2">集中培养期望入职名企产品经理职位的学生</div>
             </section>
             <section className="screen-3" id="screen-3">
