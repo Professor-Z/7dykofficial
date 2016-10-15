@@ -67,6 +67,7 @@ const Wenda = () =>{
                 </div>
             </section>
             <section className="screen-3 info" id="screen-3">
+                <div className="wave" ></div>    
                 <div className="title">导师阵容</div>
                 <div className="tutors" >
                 {

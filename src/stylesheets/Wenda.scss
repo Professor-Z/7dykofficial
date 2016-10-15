@@ -45,7 +45,7 @@ main.wenda {
             .feature-item{
                 display: inline-block;
                 &:nth-child(2){
-                    margin: 8%;
+                    margin: 0 8%;
                 };
                 >img{
                     width: 220px;
