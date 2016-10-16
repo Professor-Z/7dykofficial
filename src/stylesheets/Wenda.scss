@@ -79,6 +79,12 @@ main.wenda {
     }
     .screen-3{
         text-align: center;
+        .divider{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
         .title{
             color: $orange;
             font-size: 28px;
