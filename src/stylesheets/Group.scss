@@ -11,7 +11,7 @@ main.group{
             width: 350px;
             height: 38px;
             left: 46px;
-            bottom: 83px;
+            top: percentage(384/520);
             padding-left: 11px;
             color: white;
             line-height: 38px;
@@ -23,7 +23,7 @@ main.group{
             width: 608px;
             height: 55px;
             left: 35px;
-            bottom: 19px;
+            top: percentage(427/520);
             padding-left: 12px;
             line-height: 55px;
             background-color: $orange;
@@ -35,7 +35,7 @@ main.group{
         text-align: center;
         width: 100%;
         .title-1{
-            padding-top: 89px;
+            padding-top: percentage(70/520);
             font-size: 28px;
             color: $orange;
         }
@@ -93,7 +93,7 @@ main.group{
     section.info{
         position: relative;
         .titles{
-            width: 101px;
+            width: percentage(101/1024);
             position: absolute;
             line-height: 20px;
             .title-1{
@@ -133,32 +133,32 @@ main.group{
         background-color: #F3F5F7;
         position: relative;
         .titles{
-            left: 144px;
-            top: 154px;
+            left: percentage(144/1024);
+            top: percentage(154/520);
         }
         .image{
-            right: 141px;
+            right: percentage(141/1024);
         }
     }
     .screen-4{
         background-color: white;
         .titles{
-            right: 174px;
-            top: 150px;
+            right: percentage(174/1024);
+            top: percentage(150/520);
         }
         .image{
-            left: 142px;
+            left: percentage(142/1024);
         }
     }
     .screen-5{
         background-color: #F3F5F7;
         .titles{
-            left: 128px;
-            top: 140px;
-            width: 185px!important;
+            left: percentage(128/1024);
+            top: percentage(140/520);
+            width: percentage(185/1024)!important;
         }
         .image{
-            right: 138px;
+            right: percentage(138/1025);
         }
     }
 }

@@ -11,6 +11,7 @@ class Carousel extends Component {
         // this.curSection = 0
         this.moving = false
         this.handleScroll = this.handleScroll.bind(this)
+        this.setScreenHeight = this.setScreenHeight.bind(this)
         console.log("here")
     }
     componentDidMount(){
@@ -18,10 +19,21 @@ class Carousel extends Component {
         this.beforeScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
         this.moving = true
         this.changeSlide(0)
+        this.setScreenHeight()
         document.addEventListener('scroll',this.handleScroll)
     }
     componentWillUnmount(){
         document.removeEventListener('scroll',this.handleScroll)
+    }
+    setScreenHeight(){
+        for(let i=0,l=this.props.children.length;i<l;i++){
+            let el = document.getElementById(this.props.children[i].props.id)
+            console.log(el)
+            if(el){
+                el.style.minHeight = window.innerHeight + "px"
+                console.log(window.innerHeight)
+            }
+        }
     }
     handleScroll(e){
         let self = this
