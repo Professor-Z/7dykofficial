@@ -9,8 +9,8 @@ main.wenda {
             position: absolute;
             width: 315px;
             height: 40px;
-            left: 39px;
-            top: 152px;
+            left: percentage(39/1024);
+            top: percentage(152/520);
             padding-left: 11px;
             color: white;
             line-height: 38px;
@@ -21,8 +21,8 @@ main.wenda {
             position: absolute;
             // width: 608px;
             // height: 55px;
-            left: 43px;
-            top: 205px;
+            left: percentage(43/1024);
+            top: percentage(205/520);
             padding-left: 12px;
             font-size: 12px;
             letter-spacing: -0.08px;
@@ -30,15 +30,15 @@ main.wenda {
         }
         img.qr{
             position: absolute;
-            width: 144px;
+            width: 124px;
             height: 149px;
-            left: 43px;
-            bottom: 116px;
+            left: percentage(43/1024);
+            top: percentage(254/520);
         }
     }
     .screen-2{
         background: #f3f5f7;
-        padding: 92px 102px;
+        padding: percentage(75/520) percentage(102/1024);
         width: 100%;
         .features{
             text-align: center;
@@ -88,10 +88,10 @@ main.wenda {
         .title{
             color: $orange;
             font-size: 28px;
-            margin-top: 23px;
+            margin-top: percentage(23/520);
         }
         .tutors{
-            margin-top: 41px;
+            margin-top: percentage(41/520);
             .tutor-item{
                 display: inline-block;
                 margin: 0 2%;
