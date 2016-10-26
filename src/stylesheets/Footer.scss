@@ -6,16 +6,21 @@ footer{
         color: #333333;
     }
     .links{
-        padding: 23px 0 23px px2percent(66);
+        padding: px2percent(23) px2percent(66);
         display: inline-block;
         vertical-align: top;
+        float: left;
+    }
+    .right{
+        float: right;
+        padding: px2percent(23) px2percent(66)
     }
     .logo{
         vertical-align: top;
         display: inline-block;
         width: 35px;
         height: 45px;
-        margin: 23px 0 0 px2percent(200);
+        margin: 23px 0;
         >img{
             width: 100%;
             height: 100%;

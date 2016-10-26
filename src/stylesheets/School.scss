@@ -2,18 +2,18 @@ main.school {
     .screen-1{
         text-align: center;
         .title-1{
-            padding-top: percentage(68/520);
+            padding-top: percentage(68/1024);
             font-size: 28px;
             color: $orange;
         }
         .title-2{
-            margin-top: percentage(17/520);
+            margin-top: percentage(17/1024);
             font-size: 12px;
             color: #333333;
 
         }
         .title-3{
-            margin-top: percentage(21/520);
+            margin-top: percentage(21/1024);
             font-size: 12px;
             color: $orange;
         }
@@ -99,13 +99,13 @@ main.school {
     }
     .screen-3{
         .pm{
-            width: px2percent(596);
-            height: px2percent(209);
+            width: percentage(596/1024);
+            height: percentage(229/520);
             margin: px2percent(40) px2percent(21) px2percent(24) px2percent(61);
         }
         .nm{
             width: px2percent(285);
-            height: px2percent(208);
+            height: percentage(208/520);
             vertical-align: top;
             margin-top: px2percent(40);
         }

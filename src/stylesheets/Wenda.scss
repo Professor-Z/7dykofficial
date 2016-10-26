@@ -38,7 +38,7 @@ main.wenda {
     }
     .screen-2{
         background: #f3f5f7;
-        padding: percentage(75/520) percentage(102/1024);
+        padding: percentage(75/1024) percentage(102/1024);
         width: 100%;
         .features{
             text-align: center;
@@ -88,10 +88,10 @@ main.wenda {
         .title{
             color: $orange;
             font-size: 28px;
-            margin-top: percentage(23/520);
+            margin-top: percentage(23/1024);
         }
         .tutors{
-            margin-top: percentage(41/520);
+            margin-top: percentage(41/1024);
             .tutor-item{
                 display: inline-block;
                 margin: 0 2%;

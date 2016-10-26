@@ -35,12 +35,12 @@ main.group{
         text-align: center;
         width: 100%;
         .title-1{
-            padding-top: percentage(70/520);
+            padding-top: percentage(70/1024);
             font-size: 28px;
             color: $orange;
         }
         .title-2{
-            margin-top: 16px;
+            margin-top: px2percent(16);
             font-size: 12px;
             color: #333333;
             letter-spacing: -0.08px;
@@ -53,32 +53,34 @@ main.group{
             line-height: 20px;
         }
         .title-4{
-            margin-top: 20px;
+            margin-top: px2percent(20);
             font-size: 12px;
             color: $orange;
             letter-spacing: -0.08px;
         }
         .title-5{
             transform: rotateZ(90deg);
-            margin-top: 10px;
+            margin-top: px2percent(10);
             color: $orange;
         }
         .events{
             // margin-top: 26px;
-            padding: 26px px2percent(67);
+            padding: px2percent(26) px2percent(67);
             text-align: center;
             .event-item{
                 // float: left;
+                width: percentage(270/1024);
+                height: percentage(190/520);
                 display: inline-block;
                 &:nth-child(2){
                     margin: 0 px2percent(40) ;
                 }
                 >img{
-                    width: 270px;
-                    height: 190px;
+                    width: 100%;
+                    width: 100%;
                 }
                 .name{
-                    margin-top: 15px;
+                    margin-top: px2percent(15);
                     font-size: 16px;
                     color: #333333;
                     letter-spacing: -0.1px;
@@ -117,8 +119,8 @@ main.group{
             }
         }
         .image{
-            width: 480px;
-            height: 416px;
+            width: percentage(480/1024);
+            height: percentage(416/512);
             position: absolute;
             top: 0;
             bottom: 0;
