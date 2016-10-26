@@ -26,11 +26,12 @@ class Carousel extends Component {
         document.removeEventListener('scroll',this.handleScroll)
     }
     setScreenHeight(){
+
         for(let i=0,l=this.props.children.length;i<l;i++){
             let el = document.getElementById(this.props.children[i].props.id)
             console.log(el)
             if(el){
-                el.style.minHeight = window.innerHeight + "px"
+                el.style.height = window.innerHeight-60 + "px"
                 console.log(window.innerHeight)
             }
         }
