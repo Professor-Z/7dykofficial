@@ -18,8 +18,8 @@ const Group = () =>{
     return (
         <main className="group">
             <Carousel>
-                <section className="screen-1" id="screen-1">
-                    <img src={require("../../images/group/未标题-8.jpg")} alt="未标题-8.jpg"/>
+                <section className="screen-1" id="screen-1" >
+                    {/*<img src={require("../../images/group/未标题-8.jpg")} alt="未标题-8.jpg"/>*/}
                     <div className="title-1">早一点 带你看象牙塔外的世界</div>
                     <div className="title-2">7点一刻 提升你的求职竞争力</div>
                 </section>

@@ -47,9 +47,12 @@ module.exports = {
             query: {
                 presets: ['es2015', 'es2017','react']
             }
+        },{
+            test   : /\.css$/,
+            loaders: ['style-loader', 'css-loader', 'resolve-url-loader']
         }, {
-            test: /\.s?css$/,
-            loader: 'style!css!sass!postcss'
+            test   : /\.scss$/,
+            loaders: ['style-loader', 'css-loader', 'resolve-url-loader', 'sass-loader?sourceMap']
         }, {
             test: /\.(png|jpg|bmp)$/,
             loader: 'url?limit=3000'

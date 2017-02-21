@@ -11,7 +11,9 @@ class Carousel extends Component {
         // this.curSection = 0
         this.moving = false
         this.handleScroll = this.handleScroll.bind(this)
+        this.handleScroll1 = this.handleScroll1.bind(this)
         this.setScreenHeight = this.setScreenHeight.bind(this)
+        this.pageHeight = 0;
         console.log("here")
     }
     componentDidMount(){
@@ -20,20 +22,27 @@ class Carousel extends Component {
         this.moving = true
         this.changeSlide(0)
         this.setScreenHeight()
-        document.addEventListener('scroll',this.handleScroll)
+        document.addEventListener('scroll',this.handleScroll1)
     }
     componentWillUnmount(){
-        document.removeEventListener('scroll',this.handleScroll)
+        document.removeEventListener('scroll',this.handleScroll1)
     }
     setScreenHeight(){
-
+        this.pageHeight = window.innerHeight-60;
         for(let i=0,l=this.props.children.length;i<l;i++){
             let el = document.getElementById(this.props.children[i].props.id)
             console.log(el)
             if(el){
-                el.style.height = window.innerHeight-60 + "px"
+                el.style.height =  this.pageHeight + "px"
                 console.log(window.innerHeight)
             }
+        }
+    }
+    handleScroll1(e){//改变侧边控制按钮
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0,
+            curSection = Math.floor(scrollTop/this.pageHeight);
+        if(this.state.curSection !== curSection){
+            this.setState({curSection})
         }
     }
     handleScroll(e){
